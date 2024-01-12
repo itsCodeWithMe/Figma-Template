@@ -1,0 +1,287 @@
+/* For Mobile  */
+@media only screen and (min-width:0px) and (max-width:767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .cards {
+        display: block;
+        margin-top: 34px;
+        padding: 0;
+    }
+
+    header.Upper_body {
+        display: none;
+    }
+
+    .section1 {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .section-1 {
+        padding-bottom: 13px;
+    }
+
+    .section-1 h5 {
+        width: 300px;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: -30px;
+        margin-left: -11px;
+    }
+
+    .section-1 h3 {
+        font-size: 28px;
+    }
+
+    .section4 {
+        display: block;
+    }
+
+    .card1 {
+        display: block;
+    }
+
+    .box {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .section6 h2 {
+        text-align: left;
+        line-height: 32.2px;
+        font-size: 23px;
+    }
+
+    .inputs {
+        display: flex;
+        gap: 42px;
+        margin-top: 21px;
+        width: 100%;
+        padding: 1px;
+
+        flex-direction: column;
+    }
+
+    .cardSpecific {
+        width: 100%;
+    }
+
+    .cardSpecific a {
+        font-size: 12px;
+    }
+
+    .cardSpecific h3 {
+        font-size: 22px;
+    }
+
+    .section-5 {
+        margin-top: 30px;
+    }
+
+    .formInput {
+        width: 100%;
+    }
+
+    .section7 {
+        padding: 50px;
+    }
+
+    .UtilsSection7 {
+        padding: 37px 16px 31.19px 17px;
+        display: block;
+    }
+
+    #Button {
+        padding: 10px 2px 10px 0px;
+        /* gap: 15px; */
+        margin-left: 19px;
+    }
+
+    .textUtilsection7 p {
+        text-align: center;
+    }
+
+    .carder {
+        display: flex;
+
+        padding: 17px 0px 11px 0px;
+        justify-content: start;
+
+        text-align: left;
+        width: 100%;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+
+    .card2 {
+        display: inline;
+    }
+
+    .section8 {
+        padding: 12px 0;
+    }
+
+    .section9_1 {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .section9_2 {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .section-9 {
+        display: block;
+    }
+
+    .footerCopy p {
+        padding: 19px 70px 16px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .img2,
+    .img2 img {
+        width: 100%;
+    }
+
+    .sec_utilities-1 {
+        width: 100%;
+    }
+
+    .section-3 {
+        z-index: 0;
+    }
+
+    .section-3::before,
+    .section-3::after {
+        z-index: -1;
+        width: 100px;
+    }
+
+    .section-3::before {
+        bottom: -132px;
+    }
+
+    .textAtUtils {
+
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* For tablet */
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .menu {
+        margin-top: 1px;
+    }
+
+    .menu img {
+        width: 24%;
+    }
+
+    .Upper_body ul {
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .nav-items ul li:last-child {
+        border: none;
+
+
+    }
+
+    .section1 {
+        flex-direction: column-reverse;
+    }
+
+    .section-1 h5 {
+        width: 373px;
+        height: 77px;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 23px;
+    }
+
+    .section-1 h3 {
+        margin-top: -32px;
+    }
+
+    .sec_utilities-1 {
+        width: 100%;
+    }
+
+    .section-1 p {
+        margin-top: 4px;
+        line-height: 30px;
+    }
+
+    .section-3 {
+        z-index: 1;
+    }
+
+    .section-3::before {
+        z-index: -1;
+        width: 150 px;
+    }
+
+    .section-3::after {
+        width: 174px;
+        z-index: -1;
+    }
+
+    .img2 img {
+        width: 100%;
+    }
+
+    .section4 {
+        gap: 43px;
+        margin-top: 31px;
+    }
+
+    .textAtUtils p {
+
+        font-size: 13px;
+
+
+        line-height: 21.2px;
+
+    }
+
+    .textAtUtils h2 {
+
+        font-size: 24px;
+
+        line-height: 32.2px;
+
+    }
+
+    .section-5 {
+
+        padding: 24px 0;
+        margin-top: 31px;
+    }
+
+    .card1 {
+        margin: 28px 0;
+        /* display: inline; */
+    }
+
+    .box {
+        padding: 13px 5px;
+        width: 31%;
+    }
+
+    .section-6 {
+        padding: 23px;
+    }
+}
