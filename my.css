@@ -12,6 +12,42 @@ header {
     background: #ECFFFA;
 }
 
+/* sub-Menu css */
+
+.nav-items ul li:hover>ul {
+    display: block;
+}
+
+.nav-items ul li>ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -36px;
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    width: 243px;
+
+}
+
+.nav-items ul li>ul li {
+    padding: 10px;
+}
+
+.nav-items ul ul ul li {
+    position: absolute;
+    top: 122px;
+    left: 322px;
+    width: 136px;
+    /* background-color: black; */
+}
+
+.nav-items ul ul ul {
+    background-color: white;
+    ;
+}
+
+/* sub-Menu css */
 
 .Upper_body ul {
     display: flex;
@@ -21,6 +57,7 @@ header {
     gap: 23px;
     align-items: center;
     font-size: 15px;
+    position: relative;
 }
 
 

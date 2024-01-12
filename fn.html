@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-image: url(image.jpg);
+            height: 700px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body {
+            font-size: 22px;
+            line-height: 32px;
+            color: #ffffff;
+            font-family: ‘Open Sans’, sans-serif;
+        }
+
+        nav {
+            background-color: #1289dd;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+
+        nav ul li {
+            display: inline-block;
+            background-color: #1289dd;
+        }
+
+        nav a {
+            display: block;
+            line-height: 60px;
+            font-size: 20px;
+            padding: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hide Dropdown by Default*/
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 60px;
+        }
+
+        /* hover */
+        nav a:hover {
+            background-color: #000000;
+        }
+
+        /* Display Dropdown on Hover */
+        nav ul li:hover>ul {
+            display: inherit;
+        }
+
+        /* Fisrt Tier Dropdown */
+        nav ul ul li {
+            width: 170px;
+            position: relative;
+            float: none;
+            display: list-item;
+
+        }
+
+        /* ============ Second, Third and More Tiers ===========*/
+        nav ul ul ul li {
+            position: relative;
+            left: 170px;
+            top: -60px;
+        }
+
+        /* Change this in order to change the Dropdown symbol */
+        li>a::after {
+            content: ‘ +’;
+        }
+
+        li>a:only-child::after {
+            content: ”;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=”container”>
+        <nav>
+            <ul>
+                <li><a href=””>Home</a></li>
+                <li><a href=””>WordPress</a>
+                    <!–Fridt Tier Drop Down–>
+                        <ul>
+                            <li><a href=””>Plugins</a></li>
+                            <li><a href=””>Theme</a></li>
+                            <li><a href=””>Tutorials</a></li>
+                        </ul>
+                <li><a href=””>Web Design</a>
+
+                    <!–First Tier Drop Down–>
+                        <ul>
+                            <li><a href=””>Links</a></li>
+                            <li><a href=””>Resource</a></li>
+                            <li><a href=””>Tutorials</a>
+
+                                <!–Second Tier Drop Down–>
+                                    <ul>
+                                        <li><a href=””>JQuery</a></li>
+                                        <li><a href=””>HTML/CSS</a></li>
+                                        <li><a href=””>Outher</a>
+
+                                            <!– Third Tier Drop Down–>
+                                                <ul>
+                                                    <li><a href=””>Stuff</a></li>
+                                                    <li><a href=””>Outher Stuff</a></li>
+                                                    <li><a href=””>Things</a></li>
+
+                                                </ul>
+
+                                        </li>
+                                    </ul>
+
+                            </li>
+                        </ul>
+
+                </li>
+                <li><a href=””>Contact</a></li>
+                <li><a href=””>About</a></li>
+                <li><a href=””>Graphic Design</a></li>
+                <li><a href=””>Inspiration</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <!–End HTML Code–>
+</body>
+
+</html>
