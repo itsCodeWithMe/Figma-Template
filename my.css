@@ -21,7 +21,7 @@ header {
 .nav-items ul li>ul {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: -36px;
     text-align: left;
     background: #fff;
@@ -31,21 +31,34 @@ header {
 }
 
 .nav-items ul li>ul li {
-    padding: 10px;
-}
-
-.nav-items ul ul ul li {
-    position: absolute;
-    top: 122px;
-    left: 322px;
-    width: 136px;
-    /* background-color: black; */
+    padding: 7px;
+    text-align: left;
 }
 
 .nav-items ul ul ul {
+    position: absolute !important;
+    top: 140px;
+    left: 283px;
+    width: 138px;
     background-color: white;
-    ;
+    padding: 4px;
 }
+
+.nav-items ul li ul li:last-child {
+    background-color: white;
+    border: none;
+    left: 299px;
+
+}
+
+.nav-items ul li ul li:last-child a {
+    color: #197163;
+    font-weight: 400;
+    font-size: 15px;
+    /* padding: 3px; */
+}
+
+
 
 /* sub-Menu css */
 
@@ -246,7 +259,8 @@ ul li img {
 
 .section-3 p {
     padding: 10px;
-    margin: 33px 323px 50px 322px;
+    max-width: 795px;
+    margin: 32px auto;
     color: #555676;
     text-align: center;
     font-family: Poppins;
@@ -367,7 +381,7 @@ ul li img {
     align-items: center;
     box-shadow: 0px 8px 24px 0px rgba(21, 132, 103, 0.08);
     border-radius: 10px;
-
+    box-sizing: border-box;
 }
 
 .flexment {
@@ -620,7 +634,7 @@ section.class1:before {
 }
 
 #Button {
-    display: inline;
+    display: inline-block;
     /* background: white; */
     padding: 13px 3px 13px 4px;
     border-radius: 4px;
@@ -651,7 +665,7 @@ section.class1:before {
 }
 
 .UtilsSection7 a {
-    display: flex;
+    /* display: flex; */
     width: 170.59px;
     /* padding: 15px 40px; */
     justify-content: right;
@@ -929,3 +943,189 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@media only screen and (min-width:0px) and (max-width:767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .cards {
+        display: block;
+        margin-top: 34px;
+        padding: 0;
+    }
+
+    header.Upper_body {
+        display: none;
+    }
+
+    .section1 {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .section-1 {
+        padding-bottom: 13px;
+    }
+
+    .section-1 h5 {
+        width: 300px;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: -30px;
+        margin-left: -11px;
+    }
+
+    .section-1 h3 {
+        font-size: 28px;
+    }
+
+    .section4 {
+        display: block;
+    }
+
+    .card1 {
+        display: block;
+    }
+
+    .box {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .section6 h2 {
+        text-align: left;
+        line-height: 32.2px;
+        font-size: 23px;
+    }
+
+    .inputs {
+        display: flex;
+        gap: 42px;
+        margin-top: 21px;
+        width: 100%;
+        padding: 1px;
+
+        flex-direction: column;
+    }
+
+    .cardSpecific {
+        width: 100%;
+    }
+
+    .cardSpecific a {
+        font-size: 12px;
+    }
+
+    .cardSpecific h3 {
+        font-size: 22px;
+    }
+
+    .section-5 {
+        margin-top: 30px;
+    }
+
+    .formInput {
+        width: 100%;
+    }
+
+    .section7 {
+        padding: 50px;
+    }
+
+    .UtilsSection7 {
+        padding: 37px 16px 31.19px 17px;
+        display: block;
+    }
+
+    #Button {
+        padding: 10px 2px 10px 0px;
+        /* gap: 15px; */
+        margin-left: 19px;
+    }
+
+    .textUtilsection7 p {
+        text-align: center;
+    }
+
+    .carder {
+        display: flex;
+
+        padding: 17px 0px 11px 0px;
+        justify-content: start;
+
+        text-align: left;
+        width: 100%;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+
+    .card2 {
+        display: inline;
+    }
+
+    .section8 {
+        padding: 12px 0;
+    }
+
+    .section9_1 {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .section9_2 {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .section-9 {
+        display: block;
+    }
+
+    .footerCopy p {
+        padding: 19px 70px 16px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .img2,
+    .img2 img {
+        width: 100%;
+    }
+
+    .sec_utilities-1 {
+        width: 100%;
+    }
+
+    .section-3 {
+        z-index: 0;
+    }
+
+    .section-3::before,
+    .section-3::after {
+        z-index: -1;
+        width: 100px;
+    }
+
+    .section-3::before {
+        bottom: -132px;
+    }
+
+    .textAtUtils {
+
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {}
+
+@media only screen and (min-width:1025px) and (max-width:1366px) {}
