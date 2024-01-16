@@ -129,7 +129,7 @@
     .section9_1 {
         width: 100%;
         margin-bottom: 25px;
-        text-align: center;
+        text-align: left;
     }
 
     .section9_2 {
@@ -181,12 +181,16 @@
 
 /* For tablet */
 @media only screen and (min-width:768px) and (max-width:1024px) {
+    .container {
+        max-width: 90%;
+    }
+
     .menu {
         margin-top: 1px;
     }
 
     .menu img {
-        width: 24%;
+        width: 17%;
     }
 
     .Upper_body ul {
@@ -278,10 +282,39 @@
 
     .box {
         padding: 13px 5px;
-        width: 31%;
+        /* width: 31%; */
     }
 
     .section-6 {
         padding: 23px;
+    }
+
+    .card1 {
+        gap: 18px;
+    }
+
+    .flexment h5 {
+        font-size: 16px;
+    }
+
+    .section-9 {
+        flex-wrap: wrap;
+    }
+
+    .section9_1 {
+        width: 100%;
+    }
+
+    .section9_1 br {
+        display: none;
+    }
+
+    .carder,
+    .footerCopy p {
+        padding: 0;
+    }
+
+    .carder h3 {
+        font-size: 17px;
     }
 }
